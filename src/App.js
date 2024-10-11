@@ -96,7 +96,7 @@ export default function Game() {
     setCurrentMove(nextMove);
   }
 
-  const moves = history.map((squares, move) => {
+  var moves = history.map((squares, move) => {
     let description;
     if (move > 0) {
       description = 'Go to move #' + move;
@@ -109,6 +109,15 @@ export default function Game() {
       </li>
     );
   });
+
+  // Making the last move be text rather than a button
+  moves = moves.slice(0, -1);
+  const historyLength = history.length;
+  if (historyLength > 1) {
+    moves.push(<li key="current">You are at move {historyLength - 1}</li>);
+  } else{
+    moves.push(<li key="current">You are at game start</li>);
+  }
 
   return (
     <div className="game">
