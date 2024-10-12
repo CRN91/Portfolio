@@ -118,19 +118,15 @@ export default function Game() {
   });
 
   // Making the last move be text rather than a button
-  if (ascending) {
-    console.log(moves);
-    moves = moves.slice(0, -1);
-    console.log(moves);
+  
+  if (currentMove > 0) {
+    moves[currentMove] = <li key={currentMove}>You are at move {currentMove}</li>;
   } else {
-    moves.reverse();
-    moves = moves.slice(1, moves.length);
+    moves[currentMove] = <li key={currentMove}>You are at game start</li>;
   }
 
-  if (currentMove > 0) {
-    moves.push(<li key="current">You are at move {currentMove}</li>);
-  } else {
-    moves.push(<li key="current">You are at game start</li>);
+  if (!ascending) {
+    moves.reverse();
   }
 
   return (
