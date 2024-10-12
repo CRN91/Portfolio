@@ -91,6 +91,7 @@ export default function Game() {
   const [currentMove, setCurrentMove] = useState(0);
   const xIsNext = currentMove % 2 === 0;
   const currentSquares = history[currentMove];
+  const [ascending, setAscending] = useState(true);
 
   function handlePlay(nextSquares) {
     const nextHistory = [...history.slice(0, currentMove + 1), nextSquares];
@@ -116,6 +117,10 @@ export default function Game() {
     );
   });
 
+  if (!ascending) {
+    moves.reverse();
+  }
+
   // Making the last move be text rather than a button
   moves = moves.slice(0, -1);
   const historyLength = history.length;
@@ -131,6 +136,7 @@ export default function Game() {
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}/>
       </div>
       <div className="game-info">
+        <button onClick={() => setAscending(!ascending)}>Toggle Sort</button>
         <ol>{moves}</ol>
       </div>
     </div>
