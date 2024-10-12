@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState } from "react";
+import NetworkGraph from './components/NetworkGraph';
 
 function Square({value, onSquareClick}) {
 
@@ -80,6 +81,7 @@ function calculateWinner(squares) {
   for (let i = 0; i < lines.length; i++) {
     const [a, b, c] = lines[i];
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+      console.log(a,b,c);
       return squares[a];
     }
   }
@@ -130,14 +132,16 @@ export default function Game() {
   }
 
   return (
-    <div className="game">
-      <div className="game-board">
-        <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}/>
-      </div>
-      <div className="game-info">
-        <button onClick={() => setAscending(!ascending)}>Toggle Sort</button>
-        <ol>{moves}</ol>
-      </div>
-    </div>
+    <p><NetworkGraph /></p>
+    //<div className="game">
+    //  
+    //  <div className="game-board">
+    //    <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}/>
+    //  </div>
+    //  <div className="game-info">
+    //    <button onClick={() => setAscending(!ascending)}>Toggle Sort</button>
+    //    <ol>{moves}</ol>
+    //  </div>
+    //</div>
   );
 }
