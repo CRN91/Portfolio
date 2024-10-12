@@ -117,16 +117,19 @@ export default function Game() {
     );
   });
 
-  if (!ascending) {
+  // Making the last move be text rather than a button
+  if (ascending) {
+    console.log(moves);
+    moves = moves.slice(0, -1);
+    console.log(moves);
+  } else {
     moves.reverse();
+    moves = moves.slice(1, moves.length);
   }
 
-  // Making the last move be text rather than a button
-  moves = moves.slice(0, -1);
-  const historyLength = history.length;
-  if (historyLength > 1) {
-    moves.push(<li key="current">You are at move {historyLength - 1}</li>);
-  } else{
+  if (currentMove > 0) {
+    moves.push(<li key="current">You are at move {currentMove}</li>);
+  } else {
     moves.push(<li key="current">You are at game start</li>);
   }
 
