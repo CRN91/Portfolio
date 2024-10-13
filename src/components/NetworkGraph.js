@@ -7,9 +7,9 @@ const NetworkGraph = () => {
   const ref = useRef();
 
   useEffect(() => {
-    const width = window.innerWidth < 900 ? 600 : 900;
-    const height = window.innerHeight < 900 ? 600 : 900;
-
+    const scale = window.innerWidth < 600 ? 0.5 : 1;
+    const width = window.innerWidth < 600 ? 300 : 600;
+    const height = window.innerWidth < 600 ? 300 : 600;
 
     const svg = d3.select(ref.current)
       .attr("width", width)
@@ -39,17 +39,17 @@ const NetworkGraph = () => {
 
     // Simulation setup
     const simulation = d3.forceSimulation(nodes)
-      .force("edge", d3.forceLink(edges).id(d => d.id).distance(200))
-      .force("charge", d3.forceManyBody().strength(-500))
+      .force("edge", d3.forceLink(edges).id(d => d.id).distance(200*scale))
+      .force("charge", d3.forceManyBody().strength(-500*scale))
       .force("center", d3.forceCenter(width / 2, height / 2))
-      .force("collision", d3.forceCollide().radius(75));
+      .force("collision", d3.forceCollide().radius(75*scale));
 
     // Edges
     const edge = svg.append("g")
       .selectAll("line")
       .data(edges)
       .enter().append("line")
-      .attr("stroke-width", 8)
+      .attr("stroke-width", 8*scale)
       .attr("stroke", "#999");
 
     // Nodes setup
@@ -80,8 +80,8 @@ const NetworkGraph = () => {
 
     // Node customisation
     node.append("circle") // Shape
-      .attr("r", 65) // Radius
-      .attr("fill", "red") // Colour
+      .attr("r", 64 * scale) // Radius
+      .attr("fill", "#33cc33") // Colour
       .style("cursor", function(d) {
         if (d.id === "Adam Kaizra") { // Central node has grab cursor
           return d3.select(this.parentNode).style("cursor", "grab");
@@ -99,7 +99,7 @@ const NetworkGraph = () => {
     node.append("text")
       .attr("dy", 4) // Vertical offset
       .style("text-anchor", "middle") // Text alignment
-      .style("font-size", "14px") // Font size
+      .style("font-size", (14*scale + "px")) // Font size
       .selectAll("tspan")
       .data(d => {
       const textLines = `${d.id} ${d.label ? `\n${d.label}` : ''}`.split('\n');

@@ -132,7 +132,19 @@ export default function Game() {
   }
 
   return (
-    <p><NetworkGraph /></p>
+    <div className="App">
+    <div className="container">
+      <div className="intro">
+        <h1 className="name-title">Adam Kaizra</h1>
+        <p className="course-text">MSci Computer Science</p>
+        <p>Specializing in Network Analysis and Robotics</p>
+      </div>
+      <div className="graph">
+        <NetworkGraph />
+      </div>
+    </div>
+    </div>
+    //<p><NetworkGraph /></p>
     //<div className="game">
     //  
     //  <div className="game-board">
