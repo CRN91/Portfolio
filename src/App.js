@@ -10,7 +10,7 @@ export default function App() {
     <div className="App">
     <NavBar />
     <div className="container">
-      <div className="intro">
+      <div style={{marginLeft: '20px'}} className="intro">
         <About />
       </div>
       <div className="graph">

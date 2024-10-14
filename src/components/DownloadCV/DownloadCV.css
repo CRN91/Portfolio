@@ -1,13 +1,13 @@
 .download-cv {
-    margin-top: 40px;
+    align-items: center;
+    margin-top: 10px;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     color: #fff
   }
   
 .download-cv-link {
   display: inline-block;
-  margin-top: 10px;
   padding: 10px 20px;
   background-color: #33cc33;
   color: #000;

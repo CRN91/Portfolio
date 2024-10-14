@@ -28,20 +28,6 @@ body, html {
   position: relative;
 }
 
-.links {
-  position: absolute;
-  top: 75%; /* Adjust the position */
-  left: 20px; /* Ensure it aligns on the left */
-  display: flex;
-  gap: 10px; /* Space between icons */
-}
-
-.links a {
-  color: white;
-  font-size: 1.5em;
-  text-decoration: none;
-}
-
 .graph {
   margin-top: 10px;
   flex: 0 0 60%;

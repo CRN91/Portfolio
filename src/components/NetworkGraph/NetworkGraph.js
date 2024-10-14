@@ -86,7 +86,7 @@ const NetworkGraph = () => {
         if (d.id === "Adam Kaizra") { // Central node has grab cursor
           return d3.select(this.parentNode).style("cursor", "grab");
         } else { // Project nodes have external link cursor
-          return d3.select(this).style("cursor", "url('/external_link.png') 10 10, pointer");
+          return d3.select(this).style("cursor", "url('./external_link.png') 10 10, pointer");
         }
       })
       .on("click", function(event, d) {
