@@ -1,0 +1,45 @@
+.name-title {
+    font-size: 4em; /* Increase the font size */
+    font-weight: bold; /* Make the font bold */
+    color: #FFFFFF;  
+    margin: 0;
+    position: absolute;
+    top: 22%; /* Adjust the position */
+    left: 20px; /* Ensure it aligns on the left */
+  }
+  
+  .course-text {
+    font-size: 1.5em;
+    color: #33cc33; /* Change text color */
+    margin: 10px 0;
+    position: absolute;
+    top: 35%; /* Adjust the position */
+    left: 20px; /* Ensure it aligns on the left */
+  }
+  
+  .specialization-text {
+    font-size: 1.2em;
+    color: white;
+    margin: 10px 0;
+    position: absolute;
+    top: 50%; /* Adjust the position */
+    left: 20px; /* Ensure it aligns on the left */
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  
+  .intro-text {
+    font-size: 1.2em;
+    font-family: 'IBM Plex Mono', monospace;
+    color: lightblue;
+    position: absolute;
+    top: 22%; 
+    left: 20px;
+  }
+
+
+.intro-text, .name-title, .course-text, .specialization-text, .links {
+    position: static; /* Ensure text flows normally on mobile */
+    margin: 10px 0; /* Add some spacing */
+    text-align: center; /* Center-align the text */
+  }
+

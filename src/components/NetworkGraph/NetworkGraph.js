@@ -41,7 +41,7 @@ const NetworkGraph = () => {
     const simulation = d3.forceSimulation(nodes)
       .force("edge", d3.forceLink(edges).id(d => d.id).distance(200*scale))
       .force("charge", d3.forceManyBody().strength(-500*scale))
-      .force("center", d3.forceCenter(width / 2, height / 2))
+      .force("center", d3.forceCenter(width / 2, height / 2.3))
       .force("collision", d3.forceCollide().radius(75*scale));
 
     // Edges
@@ -73,7 +73,7 @@ const NetworkGraph = () => {
           if (d.id === "Adam Kaizra") { // Central node has grab cursor
             d3.select(this).select("circle").style("cursor", "grab");
           } else { // Project nodes have external link cursor
-            d3.select(this).select("circle").style("cursor", "url('/external_link.png') 10 10, pointer");
+            d3.select(this).select("circle").style("cursor", "url('./assets/external_link.png') 10 10, pointer");
           }
           dragended(event, d);
         }));

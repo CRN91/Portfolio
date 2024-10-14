@@ -17,6 +17,7 @@ body, html {
 }
 
 .intro {
+  margin-top: 60px;
   flex: 0 0 40%; /* Takes up 40% of the width */
   display: flex;
   flex-direction: column;
@@ -25,45 +26,6 @@ body, html {
   padding: 20px;
   box-sizing: border-box;
   position: relative;
-}
-
-.name-title {
-  font-size: 4em; /* Increase the font size */
-  font-weight: bold; /* Make the font bold */
-  color: #FFFFFF;  
-  margin: 0;
-  position: absolute;
-  top: 25%; /* Adjust the position */
-  left: 20px; /* Ensure it aligns on the left */
-}
-
-.course-text {
-  font-size: 1.5em;
-  color: #33cc33; /* Change text color */
-  margin: 10px 0;
-  position: absolute;
-  top: 35%; /* Adjust the position */
-  left: 20px; /* Ensure it aligns on the left */
-}
-
-.specialization-text {
-  font-size: 1.2em;
-  color: white;
-  margin: 10px 0;
-  position: absolute;
-  top: 50%; /* Adjust the position */
-  left: 20px; /* Ensure it aligns on the left */
-  font-family: 'IBM Plex Mono', monospace;
-}
-
-.intro-text {
-  font-size: 1.2em;
-  font-family: 'IBM Plex Mono', monospace;
-  color: lightblue;
-  margin: 0;
-  position: absolute;
-  top: 22%; 
-  left: 20px;
 }
 
 .links {
@@ -81,6 +43,7 @@ body, html {
 }
 
 .graph {
+  margin-top: 10px;
   flex: 0 0 60%;
   display: flex;
   justify-content: center;
@@ -90,6 +53,18 @@ body, html {
 svg {
   width: 90%;
   height: 90%;
+}
+
+.cv {
+  flex: 0 0 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.volunteering {
+  flex: 0 0 50%;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -107,9 +82,4 @@ svg {
     height: 100%;
   }
 
-  .intro-text, .name-title, .course-text, .specialization-text, .links {
-    position: static; /* Ensure text flows normally on mobile */
-    margin: 10px 0; /* Add some spacing */
-    text-align: center; /* Center-align the text */
-  }
 }
