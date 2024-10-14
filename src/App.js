@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState } from "react";
 import NetworkGraph from './components/NetworkGraph';
+import NavBar from './components/NavBar';
 
 function Square({value, onSquareClick}) {
 
@@ -133,17 +134,20 @@ export default function Game() {
 
   return (
     <div className="App">
+    <NavBar />
     <div className="container">
       <div className="intro">
+        <p className="intro-text">Hi, my name is</p>
         <h1 className="name-title">Adam Kaizra</h1>
         <p className="course-text">MSci Computer Science</p>
-        <p>Specializing in Network Analysis and Robotics</p>
+        <p className="specialization-text">I am a software engineer currently studying robotics, simulation, computer vision and machine learning. Previous topics I have studied include network science, data analysis and optimisation.</p>
       </div>
       <div className="graph">
         <NetworkGraph />
       </div>
     </div>
-    </div>
+  </div> 
+
     //<p><NetworkGraph /></p>
     //<div className="game">
     //  

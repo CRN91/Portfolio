@@ -1,0 +1,29 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #33cc33; /* Green #33cc33 or Grey #333*/
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+    height: 40px;
+  }
+  
+  .nav-left h2 {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  
+  .nav-right a {
+    color: white;
+    margin-left: 20px;
+    font-size: 1.5em;
+    margin-top:  -15px;
+  }
+  
+  .nav-right a:hover {
+    color: #ddd;
+  }
+  
