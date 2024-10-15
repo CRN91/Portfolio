@@ -28,6 +28,10 @@ body, html {
   position: relative;
 }
 
+.intro > * {
+  width: 90%; /* Ensure child elements don't take full width */
+}
+
 .graph {
   margin-top: 10px;
   flex: 0 0 60%;
