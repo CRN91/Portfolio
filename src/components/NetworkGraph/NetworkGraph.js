@@ -8,8 +8,8 @@ const NetworkGraph = () => {
 
   useEffect(() => {
     const scale = window.innerWidth < 600 ? 0.5 : 1;
-    const width = window.innerWidth < 600 ? 300 : 600;
-    const height = window.innerWidth < 600 ? 300 : 600;
+    const width = window.innerWidth < 600 ? window.innerWidth * 0.8 : 600;
+    const height = window.innerWidth < 600 ? window.innerHeight * 0.4 : 600;
 
     const svg = d3.select(ref.current)
       .attr("width", width)
@@ -19,9 +19,9 @@ const NetworkGraph = () => {
     const nodes = [ // Names of nodes and links to projects
       { id: "Adam Kaizra", label: "MSci Computer \nScience" },
       { id: "Warroom", label:"Godot Game", url: "https://github.com/CRN91/Warroom" },
-      { id: "Network Analysis", label: "Alliance and Trade", url: "https://github.com/CRN91" },
-      { id: "Chess Robot", label: "Articulated Arm",url: "https://github.com/CRN91" },
-      { id: "Robot Outreach", label: "Group Project", url: "https://github.com/CRN91" },
+      { id: "Network Analysis", label: "Alliance and Trade", url: "https://github.com/CRN91/Trade-Alliance-Network" },
+      { id: "Advection Sim", label: "Material Advection",url: "https://github.com/CRN91/Material-Advection-Simulation" },
+      { id: "Portfolio", label: "React Website", url: "https://github.com/CRN91/Portfolio" },
       //{ id: "Hexgrid", url: "https://github.com/CRN91/Hexgrid" },
       { id: "Spreadsheet", label: "SC Microservice", url: "https://github.com/CRN91/Spreadsheet-SC-Microservice-MVP" },
       { id: "Maze Solver", label: "Search Algorithms", url: "https://github.com/CRN91/Maze-Solver" }
@@ -30,8 +30,8 @@ const NetworkGraph = () => {
     const edges = [
       { source: "Adam Kaizra", target: "Warroom" },
       { source: "Adam Kaizra", target: "Network Analysis" },
-      { source: "Adam Kaizra", target: "Chess Robot" },
-      { source: "Adam Kaizra", target: "Robot Outreach" },
+      { source: "Adam Kaizra", target: "Portfolio" },
+      { source: "Adam Kaizra", target: "Advection Sim" },
       //{ source: "Warroom", target: "Hexgrid" },
       { source: "Adam Kaizra", target: "Spreadsheet" },
       { source: "Adam Kaizra", target: "Maze Solver" }
@@ -41,7 +41,7 @@ const NetworkGraph = () => {
     const simulation = d3.forceSimulation(nodes)
       .force("edge", d3.forceLink(edges).id(d => d.id).distance(200*scale))
       .force("charge", d3.forceManyBody().strength(-500*scale))
-      .force("center", d3.forceCenter(width / 2, height / 2.3))
+      .force("center", d3.forceCenter(width / 2, height / 2))
       .force("collision", d3.forceCollide().radius(75*scale));
 
     // Edges
@@ -73,7 +73,7 @@ const NetworkGraph = () => {
           if (d.id === "Adam Kaizra") { // Central node has grab cursor
             d3.select(this).select("circle").style("cursor", "grab");
           } else { // Project nodes have external link cursor
-            d3.select(this).select("circle").style("cursor", "url('./assets/external_link.png') 10 10, pointer");
+            d3.select(this).select("circle").style("cursor", "url('./external_link.png') 10 10, pointer");
           }
           dragended(event, d);
         }));

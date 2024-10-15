@@ -18,12 +18,12 @@
   
   .nav-right a {
     color: white;
-    margin-left: 20px;
     font-size: 1.5em;
     margin-top:  -15px;
+    margin-right: 20px;
   }
   
   .nav-right a:hover {
-    color: #ddd;
+    color: lightblue;
   }
   
