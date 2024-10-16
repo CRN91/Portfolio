@@ -3,9 +3,8 @@ import React from "react";
 import NavBar from './components/NavBar/NavBar';
 import About from './components/About/About';
 import NetworkGraph from './components/NetworkGraph/NetworkGraph';
-import DownloadCV from './components/DownloadCV/DownloadCV';
-import Volunteering from './components/Volunteering/Volunteering';
-import Dissertation from './components/Visualisations/Visualisations';
+import Dissertation from './components/Dissertation/Dissertation';
+
 export default function App() {
   return (
     <div className="App">
@@ -18,6 +17,7 @@ export default function App() {
         <NetworkGraph />
       </div>
     </div>
+    <Dissertation />
   </div> 
   );
 }
