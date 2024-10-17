@@ -7,9 +7,9 @@ const NetworkGraph = () => {
   const ref = useRef();
 
   useEffect(() => {
-    const scale = window.innerWidth < 600 ? 0.5 : 1;
-    const width = window.innerWidth < 600 ? window.innerWidth * 0.8 : 600;
-    const height = window.innerWidth < 600 ? window.innerHeight * 0.4 : 600;
+    const scale = window.innerWidth < 767 ? 0.5 : 1;
+    const width = window.innerWidth < 767 ? window.innerWidth * 0.8 : 700;
+    const height = window.innerWidth < 767 ? window.innerHeight * 0.4 : 700;
 
     const svg = d3.select(ref.current)
       .attr("width", width)
@@ -149,7 +149,12 @@ const NetworkGraph = () => {
   }, []);
 
   return (
-    <svg ref={ref}></svg>
+    <div className='project-container-2'>
+      <h4 className="graphimg2-title"> Tip: Hold and drag to move the nodes around,
+      <br></br>
+      click on a node to view the project on Github</h4>
+      <svg className='project-graph' ref={ref}></svg>
+    </div>
   );
 };
 

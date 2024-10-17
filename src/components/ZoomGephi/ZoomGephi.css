@@ -1,11 +1,13 @@
-.graph-image {
-    background-color: #484848;
+.graph-image2 {
+    border-radius: 20px;
+    border: 5px solid #33cc33;
+    background-color: #484848 !important;
+    margin-right: 20px;
+    align-self: center;
 }
 
-ImageZoom {
-    background-color: #484848;
+.graphimg3-title {
+    text-align: center;
+    color: #fff
 }
 
-.graph-container {
-    background-color: #484848;
-}

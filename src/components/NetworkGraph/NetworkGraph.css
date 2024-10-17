@@ -1,3 +1,7 @@
+.project-container-2 {
+  margin-top: 50px;
+}
+
 svg {
   max-width: 100%;
 }
@@ -10,4 +14,10 @@ svg {
   fill: lightblue; /* Highlight color on hover */
   stroke: #000; /* Optional: Add a border to emphasize */
   stroke-width: 2px;
+}
+
+.graphimg2-title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: -50px;
 }
