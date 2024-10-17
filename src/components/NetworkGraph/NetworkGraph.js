@@ -8,8 +8,8 @@ const NetworkGraph = () => {
 
   useEffect(() => {
     const scale = window.innerWidth < 600 ? 0.65 : 1;
-    const width = window.innerWidth < 600 ? window.innerWidth * 0.8 : 700;
-    const height = window.innerWidth < 600 ? window.innerHeight * 0.4 : 600;
+    const width = window.innerWidth < 600 ? window.innerWidth * 0.9 : 700;
+    const height = window.innerWidth < 600 ? window.innerHeight * 0.48 : 600;
     const halfHeight = window.innerWidth < 600 ? height / 1.9 : height / 2.5;
 
     const svg = d3.select(ref.current)
