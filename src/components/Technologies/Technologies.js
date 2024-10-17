@@ -9,7 +9,6 @@ const Technologies = () => {
   return (
     <>
     <h2 className="technologies-title">Technologies I've worked with</h2>
-
     <div className="technologies-container">
       <div className="icon-grid-container">
         <div className="icon-item" data-tooltip="Haskell">

@@ -5,6 +5,7 @@ import About from './components/About/About';
 import NetworkGraph from './components/NetworkGraph/NetworkGraph';
 import Dissertation from './components/Dissertation/Dissertation';
 import Technologies from './components/Technologies/Technologies';
+import Footer from './components/Footer/Footer';
 
 export default function App() {
   return (
@@ -18,11 +19,9 @@ export default function App() {
         <NetworkGraph />
       </div>
     </div>
-    <div>
-      <Dissertation />
-    </div>
+    <Dissertation />
     <Technologies />
-
+    <Footer />
   </div> 
   );
 }

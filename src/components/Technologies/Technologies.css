@@ -2,7 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   
   .icon-grid-container {
@@ -20,7 +22,7 @@
   color: #fff;
   text-align: center;
 }
-  
+
 
   .icon-item svg {
     width: 75px;
@@ -57,16 +59,16 @@
   }
   
   .java-logo {
-    width: 90px;
-    height: 90px;
+    width: 120px !important;
+    height: 120px !important;
     color: grey;
     position: relative;
-    right: 30%;
+    right: 20%;
     transition: transform 0.3s, fill 0.3s;
   }
   
   .java-logo:hover {
-    transform: scale(1.4);
+    transform: scale(1.2);
     color: white;
   }
 
@@ -84,8 +86,8 @@
     }
 
     .java-logo {
-        width: 90px;
-        height: 90px;
+        width: 120px !important;
+        height: 120px !important;
         color: grey;
         transition: transform 0.3s, fill 0.3s;
         position: relative;
@@ -95,7 +97,7 @@
     .java-logo:hover,
     .java-logo:focus,
     .java-logo:active {
-      transform: scale(1.5);
+      transform: scale(1.2);
       color: white;
     }
   }
