@@ -11,6 +11,7 @@ li span {
   display: flex;
   flex-direction: column;
   margin: 20px;
+  margin-top: 0;
 }
 
 .title {
@@ -19,7 +20,9 @@ li span {
   padding: 20px;
   margin-bottom: 40px;
   color: #fff;
-  text-align: left;
+  text-align: center;
+  width: 200%;
+  margin-left: -50%;
 }
 
 .section {

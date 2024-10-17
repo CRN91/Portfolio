@@ -13,7 +13,7 @@ const NavBar = () => (
       <a href="https://github.com/CRN91" target="_blank" rel="noopener noreferrer">
         <i className="fab fa-github"></i>
       </a>
-      <a href="mailto:a.kaizra@outlook.com">
+      <a href="mailto:a.kaizra@outlook.com" data-tooltip="a.kaizra@outlook.com">
         <i className="fas fa-envelope"></i>
       </a>
     </div>

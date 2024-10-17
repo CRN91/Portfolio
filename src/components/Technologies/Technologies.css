@@ -1,0 +1,48 @@
+.technologies-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  
+  .icon-grid-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.technologies-title {
+  font-size: 1.5em;
+  background-color: #33cc33;
+  padding: 20px;
+  margin-bottom: 40px;
+  color: #fff;
+  text-align: center;
+}
+  
+
+  .icon-item svg {
+    width: 50px;
+    height: 50px;
+    fill: grey;
+    transition: transform 0.3s, fill 0.3s;
+  }
+  
+  .icon-item svg:hover {
+    transform: scale(1.2);
+    fill: white;
+  }
+  
+  .java-logo {
+    scale: 1.3;
+    color: grey;
+    transition: transform 0.3s, color 0.3s;
+    position: relative;
+  }
+  
+  .java-logo:hover {
+    color: white;
+    transform: scale(2);
+  }
+  

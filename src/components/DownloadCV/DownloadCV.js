@@ -1,4 +1,5 @@
 import './DownloadCV.css'
+import download from './download.svg'
 
 const DownloadCV = () => (
     <section className="download-cv">

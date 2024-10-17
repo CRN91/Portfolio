@@ -4,6 +4,7 @@ import NavBar from './components/NavBar/NavBar';
 import About from './components/About/About';
 import NetworkGraph from './components/NetworkGraph/NetworkGraph';
 import Dissertation from './components/Dissertation/Dissertation';
+import Technologies from './components/Technologies/Technologies';
 
 export default function App() {
   return (
@@ -17,7 +18,11 @@ export default function App() {
         <NetworkGraph />
       </div>
     </div>
-    <Dissertation />
+    <div>
+      <Dissertation />
+    </div>
+    <Technologies />
+
   </div> 
   );
 }

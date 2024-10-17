@@ -7,9 +7,10 @@ const NetworkGraph = () => {
   const ref = useRef();
 
   useEffect(() => {
-    const scale = window.innerWidth < 767 ? 0.5 : 1;
-    const width = window.innerWidth < 767 ? window.innerWidth * 0.8 : 700;
-    const height = window.innerWidth < 767 ? window.innerHeight * 0.4 : 700;
+    const scale = window.innerWidth < 600 ? 0.65 : 1;
+    const width = window.innerWidth < 600 ? window.innerWidth * 0.8 : 700;
+    const height = window.innerWidth < 600 ? window.innerHeight * 0.4 : 600;
+    const halfHeight = window.innerWidth < 600 ? height / 1.9 : height / 2.5;
 
     const svg = d3.select(ref.current)
       .attr("width", width)
@@ -39,9 +40,9 @@ const NetworkGraph = () => {
 
     // Simulation setup
     const simulation = d3.forceSimulation(nodes)
-      .force("edge", d3.forceLink(edges).id(d => d.id).distance(200*scale))
+      .force("edge", d3.forceLink(edges).id(d => d.id).distance(180*scale))
       .force("charge", d3.forceManyBody().strength(-500*scale))
-      .force("center", d3.forceCenter(width / 2, height / 2))
+      .force("center", d3.forceCenter(width / 2, halfHeight))
       .force("collision", d3.forceCollide().radius(75*scale));
 
     // Edges

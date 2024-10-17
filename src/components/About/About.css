@@ -14,7 +14,7 @@
     font-weight: bold;
   }
   
-  .specialization-text {
+  .specialisation-text {
     font-size: 1.2em;
     color: white;
     text-align: center;
@@ -28,7 +28,7 @@
     font-size: 0.9em;
     font-family: 'IBM Plex Mono', monospace;
     color: lightblue;
-    margin-top: 10px;
+    margin: 0;
   }
 
   .cv {
