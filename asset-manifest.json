@@ -1,11 +1,9 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.054d15ce.css",
-    "main.js": "/Portfolio/static/js/main.2fd4bcca.js",
+    "main.css": "/Portfolio/static/css/main.8317e492.css",
+    "main.js": "/Portfolio/static/js/main.968625c0.js",
     "static/js/453.1407b060.chunk.js": "/Portfolio/static/js/453.1407b060.chunk.js",
-    "static/media/tradeforceatlas2018.png": "/Portfolio/static/media/tradeforceatlas2018.55afafa24afc8ba3dc81.png",
-    "static/media/expchoro.png": "/Portfolio/static/media/expchoro.c5ce4e9f27df30f6664d.png",
-    "static/media/2018_alliance_types.png": "/Portfolio/static/media/2018_alliance_types.542206bffb5caa9e5fc5.png",
+    "static/media/alliance2018.svg": "/Portfolio/static/media/alliance2018.5f2bc98913e0d6bc9cc2d35107d96c25.svg",
     "static/media/fa-solid-900.ttf": "/Portfolio/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/fa-brands-400.ttf": "/Portfolio/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
     "static/media/fa-solid-900.woff2": "/Portfolio/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
@@ -24,13 +22,15 @@
     "static/media/ibm-plex-mono-cyrillic-ext-400-normal.woff": "/Portfolio/static/media/ibm-plex-mono-cyrillic-ext-400-normal.18dd695e5b1103c22279.woff",
     "static/media/ibm-plex-mono-vietnamese-400-normal.woff": "/Portfolio/static/media/ibm-plex-mono-vietnamese-400-normal.442fb799b2a313edbc10.woff",
     "static/media/fa-v4compatibility.woff2": "/Portfolio/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
+    "static/media/java.svg": "/Portfolio/static/media/java.f8aaaecc9c45382ede1c9361d8af19d5.svg",
+    "static/media/download.svg": "/Portfolio/static/media/download.23a1f30aaa525393a526b41c5c8a742a.svg",
     "index.html": "/Portfolio/index.html",
-    "main.054d15ce.css.map": "/Portfolio/static/css/main.054d15ce.css.map",
-    "main.2fd4bcca.js.map": "/Portfolio/static/js/main.2fd4bcca.js.map",
+    "main.8317e492.css.map": "/Portfolio/static/css/main.8317e492.css.map",
+    "main.968625c0.js.map": "/Portfolio/static/js/main.968625c0.js.map",
     "453.1407b060.chunk.js.map": "/Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.054d15ce.css",
-    "static/js/main.2fd4bcca.js"
+    "static/css/main.8317e492.css",
+    "static/js/main.968625c0.js"
   ]
 }
