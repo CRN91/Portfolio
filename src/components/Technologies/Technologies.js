@@ -3,6 +3,8 @@ import { SiPython, SiC, SiMysql, SiHaskell, SiReact, SiPandas, SiGodotengine, Si
 import './Technologies.css';
 import { ReactComponent as JavaLogo } from './java.svg';
 
+const screenScale = window.innerWidth < 600 ? 2 : 1;
+
 const Technologies = () => {
   return (
     <>
@@ -31,10 +33,10 @@ const Technologies = () => {
         <div className="icon-item" data-tooltip="Python">
           <SiPython />
         </div>
-        <div className="icon-item" data-tooltip="Pandas">
+        <div className="icon-item" data-tooltip="Pandas" alt="Pandas">
           <SiPandas />
         </div>
-        <div className="icon-item" data-tooltip="MySQL">
+        <div className="icon-item" data-tooltip="MySQL" >
           <SiMysql />
         </div>
         

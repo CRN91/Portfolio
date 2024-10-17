@@ -21,8 +21,8 @@ li span {
   margin-bottom: 40px;
   color: #fff;
   text-align: center;
-  width: 200%;
-  margin-left: -50%;
+  width: 120%;
+  margin-left: -10%;
 }
 
 .section {
@@ -72,5 +72,25 @@ li span {
 
   .text-content, .graph-content {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .keyword {
+    font-size: 1.3em;
+    margin: 0;
+  }
+
+  .Libraries-text {
+    font-size: 1.6em;
+  }
+
+  .What-I-learnt-text {
+    margin-top: 20px;
+    font-size: 1.6em;
+  }
+
+  li span {
+    font-size: 1.3em;
   }
 }

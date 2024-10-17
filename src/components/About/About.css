@@ -3,6 +3,7 @@
     font-weight: bold; /* Make the font bold */
     color: #FFFFFF;  
     margin: 0;
+    margin-top: -10px;
   }
   
   .course-text {
@@ -34,4 +35,11 @@
   .cv {
     text-align: center;
     align-self: center;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 768px) {
+    .cv {
+      margin-bottom: -50px;
+    }
   }

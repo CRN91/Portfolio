@@ -21,3 +21,11 @@ svg {
   color: #fff;
   margin: 5px;
 }
+
+@media (max-width: 768px) {
+  .graphimg2-title {
+    text-align: center;
+    color: #fff;
+    margin-top: 0;
+  }
+}

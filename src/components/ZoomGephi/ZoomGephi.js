@@ -6,7 +6,7 @@ import './ZoomGephi.css';
 function ZoomGephi() {
   return (
     <div>
-      <h2 className="graphimg3-title"> Visualisation of the Alliance Network in 2018</h2>
+      <h2 className="graphimg1-title"> Visualisation of the Alliance Network in 2018</h2>
       <br></br>
       <h4 className="graphimg3-title"> Tip: Click on the image to zoom and pan </h4>
       <ImageZoom className="graph-image2" src={graphSVG} alt="Alliance Network in 2018" zoom="250"/>

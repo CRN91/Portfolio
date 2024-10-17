@@ -6,8 +6,19 @@
     align-self: center;
 }
 
+.graphimg1-title {
+    text-align: center;
+    color: #fff
+}
+
 .graphimg3-title {
     text-align: center;
     color: #fff
+}
+
+@media (max-width: 768px) {
+    .graphimg1-title {
+        font-size: 1.6em;
+    }
 }
 
