@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://CRN91.github.io/Portfolio",
+  "homepage": "https://kaizra.dev/",
   "private": true,
   "dependencies": {
     "@fontsource/ibm-plex-mono": "^5.1.0",
