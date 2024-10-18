@@ -20,13 +20,14 @@ const Dissertation = () => {
           <h2 className="What-I-learnt-text">What I learnt:</h2>
           <ul>
             <li><span>API querying and optimisation</span></li>
-            <li><span>Dataset sourcing & cleaning: finding and fixing errors in the data</span></li>
-            <li><span>Data exploration: understanding and getting insights from the data</span></li>
-            <li><span>Visualisations: creating graphs to better understand and present the data</span></li>
+            <li><span>Dataset sourcing & cleaning: identifying and correcting errors, ensuring data integrity</span></li>
+            <li><span>Data exploration: understanding and discerning more information from the data</span></li>
+            <li><span>Data visualisations: creating graphs to better understand and present the data</span></li>
             <li><span>Generating edge tables from the datasets</span></li>
-            <li><span>Network creation: generating various permutations of the networks</span></li>
-            <li><span>Network analysis</span></li>
-            <li><span>Network visualisation using Gephi</span></li>
+            <li><span>Network creation: constructing various permutations of the networks</span></li>
+            <li><span>Network visualisations using Gephi</span></li>
+            <li><span>Network analysis: calculating network science metrics</span></li>
+            <li><span>Dissertation writing: clearly articulating my research</span></li>
           </ul>
         </div>
         <div className="graph-content">

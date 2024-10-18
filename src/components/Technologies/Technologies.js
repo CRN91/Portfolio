@@ -9,41 +9,41 @@ const Technologies = () => {
     <h2 className="technologies-title">Technologies I've worked with</h2>
     <div className="technologies-container">
       <div className="icon-grid-container">
-        <div className="icon-item" data-tooltip="Haskell">
+        <div className="icon-item" data-tooltip="Haskell" alt="Haskell">
           <SiHaskell />
         </div>
-        <div className="icon-item" data-tooltip="Godot">
+        <div className="icon-item" data-tooltip="Godot" alt="Godot">
           <SiGodotengine />
         </div>
-        <div className="icon-item" data-tooltip="Git">
+        <div className="icon-item" data-tooltip="Git" alt="Git">
           <SiGit />
         </div>
-        <div className="icon-item" data-tooltip="Linux">
+        <div className="icon-item" data-tooltip="Linux" alt="Linux">
           <SiLinux />
         </div>
-        <div className="icon-item" data-tooltip="Bash">
+        <div className="icon-item" data-tooltip="Bash" alt="Bash">
           <SiGnubash />
         </div>
-        <div className="icon-item" data-tooltip="C">
+        <div className="icon-item" data-tooltip="C" alt="C">
           <SiC />
         </div>
-        <div className="icon-item" data-tooltip="Python">
+        <div className="icon-item" data-tooltip="Python" alt="Python">
           <SiPython />
         </div>
         <div className="icon-item" data-tooltip="Pandas" alt="Pandas">
           <SiPandas />
         </div>
-        <div className="icon-item" data-tooltip="MySQL" >
+        <div className="icon-item" data-tooltip="MySQL" alt="MySQL">
           <SiMysql />
         </div>
-        <div className="icon-item" data-tooltip="React">
+        <div className="icon-item" data-tooltip="React" alt="React">
           <SiReact />
         </div>
-        <div className="icon-item" data-tooltip="Javascript">
+        <div className="icon-item" data-tooltip="Javascript" alt="Javascript">
           <SiJavascript />
         </div>
-        <div style={{ position: 'relative' }} className="icon-item" data-tooltip="Java">
-          <JavaLogo className="java-logo" />
+        <div className="icon-java" data-tooltip="Java" alt="Java">
+          <JavaLogo />
         </div>
       </div>
     </div>

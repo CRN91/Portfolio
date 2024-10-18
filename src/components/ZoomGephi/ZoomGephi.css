@@ -20,5 +20,11 @@
     .graphimg1-title {
         font-size: 1.6em;
     }
+
+    .graph-image2 {
+        width: 104% !important; 
+        margin: 0 !important;
+        margin-left: -2% !important;
+      }
 }
 
