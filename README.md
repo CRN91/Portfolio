@@ -2,7 +2,7 @@
 
 <img src="rmimg/Personal.svg" height="28"> <img src="rmimg/Solo.svg" height="28">
 
-> Deployed with github pages
+> Development has ended
 
 ### Available at https://kaizra.dev
 
