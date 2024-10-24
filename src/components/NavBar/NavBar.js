@@ -4,7 +4,7 @@ import './NavBar.css';
 const NavBar = () => (
   <div className="navbar">
     <div className="nav-left">
-      <h2>Adam Kaizra</h2>
+      <h2>Adam Kaizra 🇬🇧</h2>
     </div>
     <div className="nav-right">
       <a href="https://www.linkedin.com/in/akaizra/" target="_blank" rel="noopener noreferrer">
