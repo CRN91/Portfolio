@@ -60,29 +60,7 @@ const NetworkGraph = () => {
       .enter().append("g")
       .attr("class", "node")
 
-      // Dragging Cursor Functionality
-      .call(d3.drag()
-        .on("start", function(event, d) { // on grab
-          d3.select(this).select("circle").style("cursor", "grab");
-        dragstarted(event, d);
-        })
-        .on("drag", function(event, d) { // whilst dragging
-          d3.select(this).select("circle").style("cursor", "grabbing");
-          dragged(event, d);
-        })
-        .on("end", function(event, d) { // on release
-          if (d.id === "Adam Kaizra") { // Central node has grab cursor
-            d3.select(this).select("circle").style("cursor", "grab");
-          } else { // Project nodes have external link cursor
-            d3.select(this).select("circle").style("cursor", "url('./external_link.png') 10 10, pointer");
-          }
-          dragended(event, d);
-        }));
-
-    // Node customisation
-    node.append("circle") // Shape
-      .attr("r", 64 * scale) // Radius
-      .attr("fill", "#33cc33") // Colour
+      // External cursor unless central node which is grab
       .style("cursor", function(d) {
         if (d.id === "Adam Kaizra") { // Central node has grab cursor
           return d3.select(this.parentNode).style("cursor", "grab");
@@ -94,7 +72,31 @@ const NetworkGraph = () => {
         if (d.url) { // Opens project github in a new tab
           window.open(d.url, "_blank");
         }
-      });
+      })
+
+      // Dragging Cursor Functionality
+      .call(d3.drag()
+        .on("start", function(event, d) { // on grab
+          d3.select(this).style("cursor", "grab");
+        dragstarted(event, d);
+        })
+        .on("drag", function(event, d) { // whilst dragging
+          d3.select(this).style("cursor", "grabbing");
+          dragged(event, d);
+        })
+        .on("end", function(event, d) { // on release
+          if (d.id === "Adam Kaizra") { // Central node has grab cursor
+            d3.select(this).style("cursor", "grab");
+          } else { // Project nodes have external link cursor
+            d3.select(this).style("cursor", "url('./external_link.png') 10 10, pointer");
+          }
+          dragended(event, d);
+        }));
+
+    // Node customisation
+    node.append("circle") // Shape
+      .attr("r", 64 * scale) // Radius
+      .attr("fill", "#33cc33"); // Colour
 
     // Node text customisation
     node.append("text")
@@ -110,7 +112,7 @@ const NetworkGraph = () => {
       .attr("x", 0)
       .attr("dy", (d, i) => i ? "1.2em" : 0)
       .style("font-weight", d => d.bold ? "bold" : "normal") // Apply bold style to the ID
-      .text(d => d.line);  
+      .text(d => d.line);
 
 
     simulation
