@@ -19,7 +19,7 @@ const NetworkGraph = () => {
 
     const nodes = [ // Names of nodes and links to projects
       { id: "Adam Kaizra", label: "MSci Computer \nScience" },
-      { id: "Warroom", label:"Godot Game", url: "https://github.com/CRN91/Warroom" },
+      { id: "Detect Anomalies", label:"Gas Simulation", url: "https://github.com/CRN91/AnomalyDetection" },
       { id: "Network Analysis", label: "Alliance and Trade", url: "https://github.com/CRN91/Trade-Alliance-Network" },
       { id: "Advection Sim", label: "Material Advection",url: "https://github.com/CRN91/Material-Advection-Simulation" },
       { id: "Portfolio", label: "React Website", url: "https://github.com/CRN91/Portfolio" },
@@ -29,7 +29,7 @@ const NetworkGraph = () => {
     ];
 
     const edges = [
-      { source: "Adam Kaizra", target: "Warroom" },
+      { source: "Adam Kaizra", target: "Detect Anomalies" },
       { source: "Adam Kaizra", target: "Network Analysis" },
       { source: "Adam Kaizra", target: "Portfolio" },
       { source: "Adam Kaizra", target: "Advection Sim" },
